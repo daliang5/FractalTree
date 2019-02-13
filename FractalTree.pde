@@ -28,13 +28,13 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   endX2 = (int)(-branchLength*Math.sin(angle1) + x);
   endY2 = (int)(branchLength*Math.sin(angle1) + y);
   
-  System.out.println(branchLength);
+
   
   //line(x,y,endX2,endY2);
   //line(x,y,endX1,endY1);
   
   if(branchLength <= smallestBranch){
-    System.out.print(branchLength);
+
     return;
   }else {
     stroke(0,255,0);
